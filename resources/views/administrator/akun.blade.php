@@ -3,20 +3,10 @@
 @section('content') 
 	<div class="container-fluid">  
 		<div class="d-flex  justify-content-between mb-4">
-        <a href="{{route('administrator.register')}}" class="btn btn-primary">
-            <i class="fas fa-plus"></i>
-            Tambah akun
-        </a>
-        <form>
-            <div class="input-group"> 
-                <input type="text" class="form-control bg-light border border-primary small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
+	        <a href="{{route('administrator.register')}}" class="btn btn-primary">
+	            <i class="fas fa-plus"></i>
+	            Tambah akun
+	        </a> 
 		</div>  
         @if($message = Session::get('success'))
             <div class="alert alert-success">

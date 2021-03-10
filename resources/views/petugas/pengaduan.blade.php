@@ -1,19 +1,7 @@
 @extends('layouts.apppetugas')
 
 @section('content')
-	<div class="container-fluid">
-		<div class="d-flex justify-content-between mb-4 ml-auto">  
-        <form>
-            <div class="input-group">
-                <input type="text" class="form-control bg-light border border-primary small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                    </button>
-                </div>
-            </div>
-        </form> 
-		</div> 
+	<div class="container-fluid"> 
 		<div class="row mt-4">
 			<div class="container">
 				<div class="table-responsive bg-"> 

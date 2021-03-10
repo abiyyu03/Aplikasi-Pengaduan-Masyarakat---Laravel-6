@@ -36,9 +36,12 @@
 								<option value="0" @if($detail_pengaduan->status == 0) selected @endif>Belum diverifikasi</option> 
 								<option value="proses" @if($detail_pengaduan->status == "proses") selected @endif>Proses</option> 
 								<option value="selesai" @if($detail_pengaduan->status == "selesai") selected @endif>Selesai</option> 
-							</select> 
-						<a href="{{route('petugas.petugasTanggapan',$detail_pengaduan->id)}}" class="btn btn-primary">Tanggapi</a> 
-						</div> 
+							</select>
+						@if($detail_pengaduan->status == "selesai" || $detail_pengaduan->status == "proses")
+							<a href="{{route('petugas.petugasTanggapan',$detail_pengaduan->id)}}" class="btn btn-primary">Tanggapi</a> 
+							</div>   
+						@endif
+						</div>
 					</form>
 				</div>
 				</div>

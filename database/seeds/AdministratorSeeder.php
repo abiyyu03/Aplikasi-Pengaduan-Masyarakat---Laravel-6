@@ -17,7 +17,7 @@ class AdministratorSeeder extends Seeder
         	'username' => 'admin123',
         	'password' => bcrypt('123123123'),
         	'telp' =>  '08112134131',
-        	'level' => 'petugas'
+        	'level' => 'admin'
         ]);
     }
 }

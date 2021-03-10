@@ -16,13 +16,7 @@ class TanggapanController extends Controller
     }
 
     public function petugasTanggapanStore(Request $request)
-    {
-    	// $data_tanggapan = $request->validate([
-    	// 	'petugas_id' => 'required',
-    	// 	'tanggal_tanggapan' => 'required',
-    	// 	'tanggapan' => 'required',
-    	// 	'petugas_id' => 'required'
-    	// ]);
+    { 
     	$data_tanggapan = new Tanggapan();
     	$data_tanggapan->pengaduan_id = $request->get('pengaduan_id');
     	$data_tanggapan->tanggapan = $request->get('tanggapan');

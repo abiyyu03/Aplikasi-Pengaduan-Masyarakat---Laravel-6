@@ -25,14 +25,7 @@
                     <div class="form-group">
                         <input type="password" class="form-control" name="password" placeholder="Password">
                     </div> 
-                        <button type="submit" class="btn btn-primary btn-block">Login</button> 
-                        <hr>
-                        <div class="text-center">
-                            <a class="" href="forgot-password.html">Lupa Password ?</a>
-                        </div>
-                        <div class="text-center">
-                            <a class="" href="/administrator/register">Buat akun dulu !</a>
-                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>  
                 </form>
             </div>
         </div>
