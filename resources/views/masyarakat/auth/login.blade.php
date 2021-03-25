@@ -28,7 +28,7 @@
                         <button type="submit" class="btn btn-primary btn-block">Login</button> 
                         <hr>
                         <div class="text-center">
-                            <a class="" href="/register">Registrasi</a>
+                            <a class="" href="/daftar">Registrasi</a>
                         </div> 
                 </form>
             </div>

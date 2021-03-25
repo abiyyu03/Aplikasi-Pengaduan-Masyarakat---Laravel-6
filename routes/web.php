@@ -64,7 +64,7 @@ Route::middleware('petugas')->group(function(){
 	Route::get('petugas/tanggapan','PetugasController@tanggapan');
 	Route::get('petugas/pengaduan/destroy/{id}','PetugasController@destroy')->name('petugas.destroy');
 	Route::get('petugas/detailpengaduan/{id}','PetugasController@detailpengaduan')->name('petugas.detailpengaduan');
-	Route::post('petugas/detailpengaduan/statusOnchange/{id}','PetugasController@statusOnchange')->name('petugas.statusOnchange');
+	Route::get('petugas/detailpengaduan/validasi/{id}','PetugasController@validasi')->name('petugas.validasi');
 	//akun admin dan petugas
 	Route::get('petugas/akun','PetugasController@akun')->name('petugas.akun');
 	Route::get('petugas/akun/destroyAkun/{id}','PetugasController@destroyAkun')->name('petugas.destroyAkun');
@@ -75,6 +75,7 @@ Route::middleware('petugas')->group(function(){
 	Route::get('petugas/detailpengaduan/tanggapan/{id}','TanggapanController@petugasTanggapanCreate')->name('petugas.petugasTanggapan'); 
 	Route::post('petugas/detailpengaduan/tanggapan/store','TanggapanController@petugasTanggapanStore')->name('petugas.petugasTanggapanStore'); 
 	Route::post('petugas/detailpengaduan/tanggapan/{id}','TanggapanController@petugasTanggapanNew')->name('petugas.petugasTanggapanNew'); 
+	Route::post('petugas/detailpengaduan/ubahStatus/{id}','TanggapanController@ubahStatus')->name('petugas.ubahStatus'); 
 	Route::get('petugas/logout','Auth\\LoginController@logoutPetugas')->name('petugas.logoutPetugas');
 });
 

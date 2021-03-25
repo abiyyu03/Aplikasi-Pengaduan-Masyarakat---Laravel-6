@@ -47,6 +47,6 @@
 				</div>
 				<p class="text-justify mt-4">{{@$data_tanggapan->tanggapan}}</p>    
 			</div>
-		</div>
+		</div><br>
 	</div>
 @endsection

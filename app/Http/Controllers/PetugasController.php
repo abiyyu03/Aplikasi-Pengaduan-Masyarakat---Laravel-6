@@ -37,13 +37,13 @@ class PetugasController extends Controller
         return view('petugas.detailpengaduan',compact('detail_pengaduan','data_tanggapan'));
     }
 
-    //ubah status dengan dropdown
-    public function statusOnchange($id)
+    //ubah status 
+    public function validasi($id)
     {
         $status = Pengaduan::with('masyarakat')->find($id);
-        $status->status = request()->get('status');
+        $status->status = "proses";
         $status->save();
-        return redirect()->back();
+        return redirect()->back()->with('success','Status laporan divalidasi !!');
     }
     //hapus data
     public function destroy($id)
@@ -69,6 +69,14 @@ class PetugasController extends Controller
     {
         $data_akunMasyarakat = Masyarakat::get();
         $data_akunMasyarakat = Masyarakat::paginate(10);
+
+        // return response([
+        //     'success' => true,
+        //     'message' => 'List Akun Masyarakat',
+        //     'data' => $data_akunMasyarakat
+        // ],200);
+        // json_encode($data_akunMasyarakat);
+
         return view('petugas.akunMasyarakat',compact('data_akunMasyarakat'));
     }
     public function destroyAkunMasyarakat($id)

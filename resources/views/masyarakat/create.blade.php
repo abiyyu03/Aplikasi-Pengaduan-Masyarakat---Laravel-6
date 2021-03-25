@@ -28,7 +28,7 @@
 	                </div> 
 	                <div class="form-group">
 	                	<label for="judul_laporan">Judul Laporan</label> 
-	                	<input type="text" class="form-control" name="judul_laporan" placeholder="Judul Laporan">
+	                	<input type="text" class="form-control" name="judul_laporan" placeholder="Judul Laporan" required>
 	                    @error('judul_laporan')
 	                    	<div class="alert-danger">
 	                      		<p>{{ $message }}</p>
@@ -37,7 +37,7 @@
 	                <div> <br>
 	                <div class="form-group">
 	                	<label for="isi_laporan">Isi Laporan</label> 
-	                    <textarea name="isi_laporan" rows="10"class="form-control"></textarea>
+	                    <textarea name="isi_laporan" required rows="10"class="form-control"></textarea>
 	                    @error('isi_laporan')
 	                    	<div class="alert-danger">
 	                    		<p>{{ $message }}</p>
@@ -46,7 +46,7 @@
 	                </div>
 	                <div class="form-group">
 	                	<label for="foto">Foto bukti</label> 
-	                	<input type="file" class="form-control" name="foto" placeholder="Masukan bukti foto">
+	                	<input type="file" class="form-control" name="foto" placeholder="Masukan bukti foto" required>
 	                    @error('foto')
 	                    	<div class="alert-danger">
 	                      		<p>{{ $message }}</p>

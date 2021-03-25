@@ -17,9 +17,9 @@
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="{{route('petugas.pengaduan')}}">
-                    <i class="fas fa-fw fa-comment"></i>
+                    <i class="fas fa-fw fa-comments"></i>
                     <span>Pengaduan Masyarakat</span></a>
-                </li>  
+                </li>   
                 <li class="nav-item active">
                     <a class="nav-link" href="{{route('petugas.akun')}}">
                     <i class="fas fa-fw fa-users"></i>

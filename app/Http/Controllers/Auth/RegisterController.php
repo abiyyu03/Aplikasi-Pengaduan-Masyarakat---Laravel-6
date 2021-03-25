@@ -44,14 +44,7 @@ class RegisterController extends Controller
             'username' => 'required|unique:masyarakats', 
             'password' => 'required|min:6',
             'telp' => 'required|numeric'
-        ]); 
-        // Masyarakat::firstOrCreate([ 
-        //     'nik' => $request->get('nik'), 
-        //     'nama' => $request->get('nama'), 
-        //     'username' => $request->get('username'), 
-        //     'password' => bcrypt($request->get('password')),
-        //     'telp' => $request->get('telp')
-        // ]); 
+        ]);  
         $data_masyarakat = new Masyarakat();
         $data_masyarakat->nik = $request->get('nik');
         $data_masyarakat->nama = $request->get('nama');
