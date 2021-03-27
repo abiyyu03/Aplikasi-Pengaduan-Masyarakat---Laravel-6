@@ -14,7 +14,7 @@
 					</div>			
 					<a href="#fiturfitur" style="background-image:linear-gradient(to right,gold,#fff700)"class="btn mt-4 mb-2 text-dark font-weight-bold p-3">Yuk Pelajari !</a>
 				</div>  
-				<a href="/datacovid" class="text-white ">Informasi covid-19 di Indonesia</a>
+				<a href="/datacovid" class="text-white " style="font-size:20px"><u>Informasi covid-19 di Indonesia</u></a>
 			</div>
 		</div>
 	</div>
