@@ -32,7 +32,9 @@ Route::middleware('masyarakat')->group(function(){
 	Route::get('lapor','MasyarakatController@create'); 
 	Route::get('laporanku','MasyarakatController@listLaporan'); 
 	Route::get('/laporanku/detaillaporanku/{id}','MasyarakatController@detailLaporan'); 
+	Route::get('/laporanku/detaillaporanku/destroy/{id}','MasyarakatController@destroyLaporan'); 
 	Route::post('/store','MasyarakatController@store')->name('masyarakat.store');
+	Route::get('/datacovid','MasyarakatController@dataCovid')->name('masyarakat.datacovid');
 });
 //Route::resource('masyarakat','MasyarakatController'); 
 Route::get('/','MasyarakatController@index');    
@@ -65,13 +67,17 @@ Route::middleware('petugas')->group(function(){
 	Route::get('petugas/pengaduan/destroy/{id}','PetugasController@destroy')->name('petugas.destroy');
 	Route::get('petugas/detailpengaduan/{id}','PetugasController@detailpengaduan')->name('petugas.detailpengaduan');
 	Route::get('petugas/detailpengaduan/validasi/{id}','PetugasController@validasi')->name('petugas.validasi');
+
 	//akun admin dan petugas
 	Route::get('petugas/akun','PetugasController@akun')->name('petugas.akun');
 	Route::get('petugas/akun/destroyAkun/{id}','PetugasController@destroyAkun')->name('petugas.destroyAkun');
-	//akun masyarakat
-	Route::get('petugas/akun/destroyAkunMasyarakat/{id}','PetugasController@destroyAkunMasyarakat')->name('petugas.destroyAkunMasyarakat'); 
+
+	//akun masyarakat pake api
+	Route::get('petugas/akun/destroyAkunMasyarakat/{id}','PetugasController@destroyAkunMasyarakat')->name('petugas.destroyAkunMasyarakat');  
 	Route::get('petugas/akunMasyarakat','PetugasController@akunMasyarakat')->name('petugas.akunMasyarakat');
-	//Tanggapan
+	Route::get('petugas/akunMasyarakatJson','PetugasController@akunMasyarakatJson')->name('petugas.akunMasyarakatJson');
+
+	//Tanggapan 
 	Route::get('petugas/detailpengaduan/tanggapan/{id}','TanggapanController@petugasTanggapanCreate')->name('petugas.petugasTanggapan'); 
 	Route::post('petugas/detailpengaduan/tanggapan/store','TanggapanController@petugasTanggapanStore')->name('petugas.petugasTanggapanStore'); 
 	Route::post('petugas/detailpengaduan/tanggapan/{id}','TanggapanController@petugasTanggapanNew')->name('petugas.petugasTanggapanNew'); 

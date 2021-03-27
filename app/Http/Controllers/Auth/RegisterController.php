@@ -8,28 +8,6 @@ use App\{Masyarakat,Petugas, Administrator};
 
 class RegisterController extends Controller
 {
-    // public function registerAdministrator()
-    // {
-    // 	return view('administrator.auth.register');
-    // }
-    // public function storeAdministrator(Request $request)
-    // { 
-    // 	$data_administrator = $request->validate([ 
-    // 		'nama_petugas' => 'required',
-    // 		'username' => 'required',
-    // 		'password' => 'required|min:6',
-    // 		'telp' => 'required|numeric',
-    // 		'level' => 'required|not_in:0'
-    // 	]); 
-    // 	$data_administrator = new Administrator(); 
-    // 	$data_administrator->nama_petugas = $request->get('nama_petugas');
-    // 	$data_administrator->username = $request->get('username');
-    // 	$data_administrator->password = bcrypt($request->get('password'));
-    // 	$data_administrator->telp = $request->get('telp');
-    // 	$data_administrator->level = $request->get('level');
-    // 	$data_administrator->save();
-    // 	return redirect()->back()->with('success','Data kamu berhasil disimpan');
-    // }
 
     public function registerMasyarakat()
     {

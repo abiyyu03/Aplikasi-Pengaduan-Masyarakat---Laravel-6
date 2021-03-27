@@ -14,16 +14,21 @@
 								{{$laporan->judul_laporan}} 
 							</h5>   
 							<p>
-								{{Carbon\Carbon::parse($laporan->tanggal_pengaduan)->format('D, d F Y')}}
-							</p>
-							Status : {{$laporan->status}}
+								{{Carbon\Carbon::parse($laporan->tanggal_pengaduan)->format('l, d F Y')}}
+							</p> 
+								@if($laporan->status == "proses") 
+									<p> Status : <i class="fas fa-check"></i> <b>Divalidasi</b></p>
+								@elseif($laporan->status == "selesai")
+									<p class=""> Status : <i class="fas fa-check-circle"></i> <b>Diverifikasi</b></p>
+								@else
+									<p class=""> Status : <b>Belum dilihat</b> </p>
+								@endif 
 						</div>
 					</div>
 				</div>
 				<div class="card-header  " style="background-color:#1374a1"> 
 					<div class="ml-auto d-flex justify-content-between">
-						<p>
-						</p>
+						<a href="/laporanku/detaillaporanku/destroy/{{$laporan->id}}" onclick="return confirm('Apakah anda yakin ingin menghapus laporan ini?')"><i class="fas fa-trash text-white fa-2x"></i></a>
 						<a href="/laporanku/detaillaporanku/{{$laporan->id}}" class="btn btn-info text-white">Detail</a> 
 					</div>
 				</div>

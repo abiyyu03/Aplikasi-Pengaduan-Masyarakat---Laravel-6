@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark " style="background-image:linear-gradient(to right,#1890c8,#1aa6e1,#1890c8);">
-  <a class="navbar-brand ml-1 p-0" href="/"><img width="140" src="{{asset('img/applogo_white.png')}}" alt="logoapp"></a>
+  <a class="navbar-brand ml-1 p-0" href="/"><img width="140" src="{{asset('img/applogo_transparan.png')}}" alt="logoapp"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

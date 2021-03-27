@@ -2,7 +2,7 @@
         <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center mt-4" href="#"> 
+            <a class="sidebar-brand d-flex align-items-center justify-content-center mt-4" href="/"> 
                 <img class="img img-brand" src="{{asset('img/applogo_white.png')}}" alt="applogo" style="max-width:200px"> 
             </a>
 

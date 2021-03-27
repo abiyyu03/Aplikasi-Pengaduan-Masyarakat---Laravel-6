@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request; 
+use Illuminate\Http\Request;  
 use App\{Pengaduan,Masyarakat,Petugas,Tanggapan};
 use Carbon\Carbon;
+use Datatables;
+use GuzzleHttp\Client;
 
 class PetugasController extends Controller
 {
@@ -15,7 +17,7 @@ class PetugasController extends Controller
     public function index()
     {
         $data_pengaduan = Pengaduan::get();
-        $data_masyarakat = Masyarakat::get(); 
+        $data_masyarakat = Masyarakat::get();  
         return view('petugas.index',compact('data_pengaduan','data_masyarakat'));
     }  
 
@@ -65,24 +67,30 @@ class PetugasController extends Controller
         $data_akun->delete();
         return redirect()->back();
     }
+
+    // akun masyarakat
+    // public function akunMasyarakatJson()
+    // {
+    //     $result = Masyarakat::get(); 
+    //     return Datatables::of($result)->make(true);  
+    // }
+
+    // public function akunMasyarakat()
+    // {
+    //     return view('petugas.akunMasyarakat');
+    // }
+
     public function akunMasyarakat()
     {
         $data_akunMasyarakat = Masyarakat::get();
-        $data_akunMasyarakat = Masyarakat::paginate(10);
-
-        // return response([
-        //     'success' => true,
-        //     'message' => 'List Akun Masyarakat',
-        //     'data' => $data_akunMasyarakat
-        // ],200);
-        // json_encode($data_akunMasyarakat);
-
-        return view('petugas.akunMasyarakat',compact('data_akunMasyarakat'));
-    }
+        $data_akunMasyarakat = Masyarakat::paginate(10); 
+        return view('petugas.akunMasyarakat',compact('data_akunMasyarakat')); 
+    } 
     public function destroyAkunMasyarakat($id)
     {
         $data_akunMasyarakat = Masyarakat::find($id);
         $data_akunMasyarakat->delete();
         return redirect()->back()->with('success','Data berhasil dihapus !');
     }
+
 }

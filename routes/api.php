@@ -13,4 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('users/{id}','PetugasController@akunMasyarakat');
+Route::get('login','Auth\\LoginController@loginFormPetugas');
+Route::post('login/p','Auth\\LoginController@loginPetugas');
+Route::get('users','PetugasController@akunMasyarakat');

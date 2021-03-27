@@ -12,8 +12,9 @@
 					<div class="container">
 						<h5 class="text-white text-center "><strong>Apems (Aplikasi pengaduan masyarakat)</strong> Desa Bojongnangka adalah aplikasi pelaporan dan penyaranan berbasis web yang akan memudahkan warga desa Bojongnangka untuk <strong>mengadukan keluhan ataupun memberi saran</strong> untuk desa bojongnangka lebih baik </h5> 
 					</div>			
-					<a href="#fiturfitur" style="background-image:linear-gradient(to right,gold,#fff700)"class="btn mt-4 text-dark font-weight-bold p-3">Yuk Pelajari !</a> 
-				</div> 
+					<a href="#fiturfitur" style="background-image:linear-gradient(to right,gold,#fff700)"class="btn mt-4 mb-2 text-dark font-weight-bold p-3">Yuk Pelajari !</a>
+				</div>  
+				<a href="/datacovid" class="text-white ">Informasi covid-19 di Indonesia</a>
 			</div>
 		</div>
 	</div>
@@ -23,7 +24,7 @@
 	" id="fiturfitur">
 		<div class="container">
 			<div class="mt-4 text-center">
-				<h1 class="text-uppercase font-weight-bold  " style="color:#1890c8">Keunggulan</h1><hr style="border-color:#1890c8;border-width:2px;">
+				<h1 class="text-uppercase font-weight-bold  " style="color:#1890c8">Apa sih yang lebih dari Appems ?</h1><hr style="border-color:#1890c8;border-width:2px;">
 			</div>
 			<div class="row mt-4 text-center">
 				<div class="col-md-4">
