@@ -26,6 +26,7 @@ Route::post('daftar/proses','Auth\\RegisterController@storeMasyarakat')->name('m
 Route::get('/administrator/daftar','Auth\\RegisterController@registerAdministrator');
 Route::post('/administrator/daftar/proses','Auth\\RegisterController@storeAdministrator')->name('administrator.register');	
 Route::get('/logout','Auth\\LoginController@logoutMasyarakat')->name('masyarakat.logout');
+	Route::get('/datacovid','MasyarakatController@dataCovid')->name('masyarakat.datacovid');
 
 //Masyarakat's resource
 Route::middleware('masyarakat')->group(function(){
@@ -34,7 +35,6 @@ Route::middleware('masyarakat')->group(function(){
 	Route::get('/laporanku/detaillaporanku/{id}','MasyarakatController@detailLaporan'); 
 	Route::get('/laporanku/detaillaporanku/destroy/{id}','MasyarakatController@destroyLaporan'); 
 	Route::post('/store','MasyarakatController@store')->name('masyarakat.store');
-	Route::get('/datacovid','MasyarakatController@dataCovid')->name('masyarakat.datacovid');
 });
 //Route::resource('masyarakat','MasyarakatController'); 
 Route::get('/','MasyarakatController@index');    

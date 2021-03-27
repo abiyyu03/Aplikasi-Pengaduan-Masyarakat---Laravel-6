@@ -73,5 +73,6 @@
        	</div>
    	</div> 
 	</div>
+	<p class="small">Sumber : https://api.kawalcorona.com/indonesia</p>
 </div>
 @endsection
