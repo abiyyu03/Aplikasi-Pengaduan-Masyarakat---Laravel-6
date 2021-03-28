@@ -10,10 +10,10 @@
     <title>Appems Administrator</title>
 
     <!-- Custom fonts for this template-->
-    <link href="{{asset('startbootstrap-sb-admin-2/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css"> 
+    <link href="{{secure_asset('startbootstrap-sb-admin-2/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css"> 
 
     <!-- Custom styles for this template-->
-    <link href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
 
 </head>  
 <body id="page-top">
@@ -79,9 +79,9 @@
         </div>
     </div>  
     <!-- Bootstrap core JavaScript-->
-    <script src="{{asset('startbootstrap-sb-admin-2/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('startbootstrap-sb-admin-2/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script> 
+    <script src="{{secure_asset('startbootstrap-sb-admin-2/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{secure_asset('startbootstrap-sb-admin-2/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script> 
     <!-- Custom scripts for all pages-->
-    <script src="{{asset('js/sb-admin-2.min.js')}}"></script>  
+    <script src="{{secure_asset('js/sb-admin-2.min.js')}}"></script>  
 </body>
 </html>  
