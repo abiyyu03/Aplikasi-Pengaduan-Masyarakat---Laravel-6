@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Pengaduan extends Model
 {
 	protected $table = "pengaduans";
-	protected $fillable = ['tanggal_pengaduan','masyarakat_nik','judul_laporan','isi_laporan','foto','status'];
+    protected $guarded = [];
+	// protected $fillable = ['tanggal_pengaduan','masyarakat_nik','judul_laporan','isi_laporan','foto','status'];
 	
     public function masyarakat()
     {
